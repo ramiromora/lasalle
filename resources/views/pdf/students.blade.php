@@ -72,7 +72,7 @@
                     <img src="data:image/png;base64,
                         {!! base64_encode(QrCode::format('png')
                         ->size(120)
-                        ->generate(''.$item->id.','.strtoupper($item->name).'')) !!} ">
+                        ->generate(''.Hashids::encode($item->id).','.strtoupper($item->name).', BOLMUN 2019')) !!} ">
                 </td>
             </tr>
         @empty

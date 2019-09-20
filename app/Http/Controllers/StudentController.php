@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Barryvdh\DomPDF\Facade as PDF;
 use App\Exports\ExcelExport;
 use Maatwebsite\Excel\Facades\Excel;
+use Vinkla\Hashids\Facades\Hashids;
 
 class StudentController extends Controller
 {

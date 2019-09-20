@@ -236,6 +236,7 @@ return [
         'QrCode' => SimpleSoftwareIO\QrCode\Facades\QrCode::class,
         'Toastr' => Kamaln7\Toastr\Facades\Toastr::class ,
         'Datatables' => Yajra\Datatables\Facades\Datatables::class,
+        'Hashids' => Vinkla\Hashids\Facades\Hashids::class,
     ],
 
 ];

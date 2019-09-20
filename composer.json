@@ -20,6 +20,7 @@
         "phpoffice/phpspreadsheet": "^1.9",
         "simplesoftwareio/simple-qrcode": "^2.0",
         "tcg/voyager": "^1.2",
+        "vinkla/hashids": "^6.0",
         "yajra/laravel-datatables-oracle": "^9.6"
     },
     "require-dev": {

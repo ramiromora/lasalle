@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Vinkla\Hashids\Facades\Hashids;
 use App\Meal;
 use App\Schedule;
 use App\Student;
@@ -40,6 +41,9 @@ class MealController extends Controller
     {
         //
         $requestData = $request->only(['place', 'student_id']);
+        $requestData['student_id'] = isset(Hashids::decode($requestData['student_id'])[0])?
+            Hashids::decode($requestData['student_id'])[0]:
+            '0';
         $student = Student::Where('id',$requestData['student_id'])->first();
         if(isset($student))
         {
